@@ -4,7 +4,7 @@ SVG Batch Exporter
 
 Inkscape based Python 3 script/module for batch exporting SVG files. It
 supports exporting to wide variety of image/document formats. Also,
-rules (size, format etc) can be declared (in a JSON-formatted-file_) for
+rules (size, format etc) can be declared (in a `JSON-formatted-file <#1-json-formatted-rules-file>`_) for
 each svg file while batch exporting.
 
 Supported formats
@@ -30,8 +30,8 @@ Requirements
 ============
 
 1. Python 3
-2. `Inkscape <https://inkscape.org>`__
-3. `Pillow (PIL fork) <https://python-pillow.org/>`__ library
+2. `Inkscape <https://inkscape.org>`_
+3. `Pillow (PIL fork) <https://python-pillow.org/>`_ library
 
     .. code:: bash
 
@@ -61,9 +61,8 @@ Install
 Usage
 =====
 
-Can be used either as a command-line_ script or as a python module_
+Can be used either as a `command-line <#1-command-line-script>`_ script or as a python `module <#2-module>`_
 
-.. _command-line:
 1. Command-line Script:
 -----------------------
 
@@ -113,7 +112,6 @@ Use ``-h`` or ``--help`` to get help
 
     svg_batch_exporter.py /home/userx/svg_dir /home/userx/out_dir --rules /home/userx/rules.json --size 50,50 --format jpg --drawing_only yes
 
-.. _module:
 2. Module:
 ----------
 
@@ -143,7 +141,6 @@ Use ``-h`` or ``--help`` to get help
 Notes
 =====
 
-.. _JSON-formatted-file:
 1. JSON formatted Rules file
 ----------------------------
 
