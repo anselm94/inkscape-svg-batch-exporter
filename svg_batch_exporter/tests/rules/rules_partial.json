@@ -1,0 +1,10 @@
+{
+    "_globalrule_" : {
+      "size" : [300, 300],
+      "format" : "jpg"
+    },
+    "ink": {
+      "size": "default",
+      "format": "gif"
+    }
+}

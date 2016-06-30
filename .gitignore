@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# All output test files
+svg_batch_exporter/tests/output/rules_full/*
+svg_batch_exporter/tests/output/rules_none/*
+svg_batch_exporter/tests/output/rules_partial_1/*
+svg_batch_exporter/tests/output/rules_partial_2/*

@@ -1,0 +1,15 @@
+{
+    "gauge" : {
+      "size" : [300, 300],
+      "format" : "gif"
+    },
+    "icecream_sandwich": {
+      "size" : [158, 133],
+      "format" : "png" ,
+      "drawing_only": false
+    },
+    "ink": {
+      "size": "default",
+      "format": "jpg"
+    }
+}
