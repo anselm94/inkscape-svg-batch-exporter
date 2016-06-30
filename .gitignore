@@ -87,6 +87,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-# All output test files
-svg_batch_exporter/tests/output/**/*
