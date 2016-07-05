@@ -139,6 +139,7 @@ def _get_inkscape_path():
             if not os.path.isfile(path):
                 _report_error(FileNotFoundError,
                               "No Inkscape installation found!")
+    _report_status("Inkscape installation found ... " + path)
     return path
 
 
@@ -158,8 +159,10 @@ def _build_svg_filenames(dirpath):
         if file_name.endswith(".svg"):
             name = file_name.split('.svg')[0]
             svg_file_names.append(name)
-    if len(svg_file_names) == 0:
+    no_of_svg_files = len(svg_file_names)
+    if no_of_svg_files == 0:
         _report_error(FileNotFoundError, "No SVG file found in " + dirpath)
+    _report_status(str(no_of_svg_files) + " SVG files found")
     return svg_file_names
 
 
@@ -380,6 +383,8 @@ def export_svg(src_dir, out_dir, json_rules_file=None, file_format=None, size=No
                               "." + final_param["format"],
                               final_param["format"], final_param["size"],
                               final_param["drawing_only"])
+        _report_status("Saved " + svg_file + "." + final_param["format"])
+    _report_status("Done")
 
 if __name__ == "__main__":
     args = _parse_arguments()
